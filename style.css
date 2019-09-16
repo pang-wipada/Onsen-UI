@@ -1,0 +1,186 @@
+h1 {
+    font: 1em sans-serif;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+    font: 1em sans-serif;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    text-align: center;
+    font: 1em sans-serif;
+    font-size: 8pt;
+    font-family: 'PT Sans', sans-serif;
+}
+
+p1 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: red;
+}
+
+p2 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+p3 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40pt;
+    color: white;
+}
+
+p4 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 8pt;
+}
+
+p5 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: red;
+    font-size: 8pt;
+}
+
+p6 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(161, 161, 161);
+    font-size: 8pt;
+}
+
+p7 {
+    font: 1em sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ons-button[modifier="large"] {
+    background: rgb(35, 155, 86);
+}
+
+ons-button[modifier="material1"] {
+    background: rgb(21, 17, 224);
+}
+
+ons-button[modifier="material2"] {
+    background: rgb(189, 11, 11);
+}
+
+#login {
+    margin-top: 20%;
+}
+
+#register {
+    margin-top: 20%;
+}
+
+#color-page .page__background{
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#melbourne {
+    text-align: center;
+}
+
+#add {
+    background-color: gray;
+}
+
+#drinks {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+
+#desserts {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+
+#order {
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 40pt;
+}
+
+#button-order {
+    background-color: white;
+    color: black;
+    font-size: 10pt;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#color-gray {
+    background-color: rgb(230, 230, 230);
+}
+
+#card-border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+#color-violet {
+    background-color:rgb(131, 41, 131); 
+    text-align: center;
+    color: white;
+}
+
+#color-blue {
+    background-color:rgb(41, 34, 141); 
+    text-align: center;
+    color: white;
+}
+
+#color-black {
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+#regis {
+    color: red;
+    font-size: 12pt;
+}
+
+#forgot {
+    color: blue;
+    font-size: 12pt;
+}
+
+#button-black {
+    color: black;
+}
+
+#back {
+    margin-left: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

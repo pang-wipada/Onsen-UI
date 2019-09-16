@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+
+</head>
+
+<body>
+
+  <ons-page id="color-page">
+        <ons-card id="login">
+            <center><img src="https://image.flaticon.com/icons/svg/45/45332.svg" style="width: 15%"></center>
+            <h1>Login</h1>
+            <p>Insert your email and password to login</p>
+        
+        <br></br>
+        <div class="container">
+           <span>
+                <div><input id="email" class="text-input text-input--material" placeholder="E-mail" type="text" required></div>
+                <br>
+                <div><input id="password" class="text-input text-input--material" placeholder="Password" type="password" required></div>
+           </span>
+        </div>
+
+        <center>
+        <section style="width: 70%">
+        <br></br>
+            <ons-button modifier="large" onclick="validate()">Login</ons-button>
+        </section>
+        
+        <br>
+        <p2>or</p2>
+
+        <br></br>
+            <ons-button modifier="material1" class="button--cta" style="width: 35%;" onclick="validate()">Facebook</ons-button>
+            <ons-button modifier="material2" class="button--cta" style="width: 35%;" onclick="validate()">Gmail</ons-button>
+        </center>
+
+        <br>
+        <div>
+           <ons-button id="forgot" modifier="quiet">forgot password?</ons-button>
+           <ons-button id="regis" modifier="quiet" onclick="validate2()">create an account</ons-button>
+        </div>
+      </ons-card>
+
+</ons-page>
+
+
+</body>
+
+    <script>
+        function validate() {
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+
+            if(email !== "" && password !== ""){
+                window.location.href = "food-category.html";
+            } else {
+                
+            }
+        }
+
+        function validate2() {
+            window.location.href = "register.html";
+        }
+    </script>
+
+</html>

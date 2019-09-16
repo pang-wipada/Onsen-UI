@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+
+</head>
+
+<body>
+    <ons-page id="color-page">
+        <ons-card id="register">
+                <center><img src="https://image.flaticon.com/icons/svg/45/45332.svg" style="width: 15%"></center>
+            <h2>Register an Account</h2>
+            <p>By registering an account, you accept all terms and conditions</p>
+        
+        <br></br>
+        <div class="container">
+           <span>
+                <div><input id="fullname" class="text-input text-input--material" placeholder="Full Name" type="text" required></div>
+                <br>
+                <div><input id="email" class="text-input text-input--material" placeholder="E-mail Address" type="email" required></div>
+                <br>
+                <div><input id="phone" class="text-input text-input--material" placeholder="Phone Number" type="number" required></div>
+                <br>
+                <div><input id="password" class="text-input text-input--material" placeholder="Password" type="password" required></div>
+           </span>
+        </div>
+
+        <center>
+        <section style="width: 70%">
+        <br></br>
+            <ons-button modifier="large" onclick="validate3()">Register</ons-button>
+        </section>
+        </center>
+        <br>
+
+        <ons-button id="back" modifier="quiet" onclick="validate4()">back</ons-button>
+      </ons-card>
+
+    </ons-page>
+
+</body>
+
+<script>
+        function validate3() {
+            var fullname = document.getElementById("fullname");
+            var email = document.getElementById("email");
+            var email = document.getElementById("phone");
+            var email = document.getElementById("password");
+            
+            
+
+            if(fullname !== "" && email !== ""&& phone !== ""&& password !== ""){
+                window.location.href = "index.html";
+            } else {
+                
+            }
+        }
+
+        function validate4() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</html>

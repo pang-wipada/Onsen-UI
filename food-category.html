@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Category</title>
+
+    <script src="js/app.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+
+</head>
+
+<body>
+                <ons-splitter>
+                                <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+                                  <ons-page>
+                                    <ons-list>
+                                      <ons-list-item tappable>
+                                        <img src="https://image.flaticon.com/icons/svg/149/149452.svg" style="width: 15%"> &nbsp&nbsp                
+                                        Profile
+                                        </ons-list-item>
+                                    </ons-list>
+                                    <ons-list>
+                                        <ons-list-item tappable>
+                                        <img src="https://image.flaticon.com/icons/svg/1076/1076731.svg" style="width: 15%"> &nbsp&nbsp                
+                                        Address
+                                        </ons-list-item>
+                                    </ons-list>
+                                    <ons-list>
+                                        <ons-list-item tappable>
+                                        <img src="https://image.flaticon.com/icons/svg/127/127963.svg" style="width: 15%"> &nbsp&nbsp                
+                                        History
+                                        </ons-list-item>
+                                    </ons-list>
+                                    <ons-list>
+                                       <ons-list-item onclick="createAlertDialog()" tappable>
+                                        <img src="https://image.flaticon.com/icons/svg/159/159707.svg" style="width: 15%"> &nbsp&nbsp
+                                        Logout
+                                      </ons-list-item>
+                                    </ons-list>
+                                  </ons-page>
+                                </ons-splitter-side>
+
+    <ons-page id="color-page">
+            <ons-toolbar>
+                   <div class="left">
+                        <ons-toolbar-button> 
+                           <img src="https://image.flaticon.com/icons/svg/60/60510.svg" style="width: 15%">
+                        </ons-toolbar-button>
+                   </div>
+
+                    <div class="center">FoodFeed</div>
+                    <div class="right"><ons-toolbar-button> 
+                           <img src="https://image.flaticon.com/icons/svg/49/49116.svg" style="width: 15%">
+                        </ons-toolbar-button>
+                    </div>
+            </ons-toolbar>
+
+            <br>
+
+            <center><ons-button id="button-order"><ons-select id="choose-sel" onchange="editSelects(event)">
+                    <option>Select</option>
+                    <option>Delivery</option>
+                    <option>Pickup</option>
+            </ons-select></ons-button></center>
+            
+                  <ons-card id="melbourne">
+                     <p2>Melbourne</p2>
+                  </ons-card>
+        
+                  
+                  <ons-row>
+                        <ons-col width="50%"><ons-card id="melbourne">
+                                <ons-toolbar-button onclick="validate5()">
+                                <img src="https://image.flaticon.com/icons/png/128/883/883765.png" style="width: 30%"></ons-toolbar-button>
+                                <br></br>
+                                <p2>Fast Food</p2>
+                            </ons-card></ons-col>
+                        <ons-col width="50%"><ons-card id="melbourne">
+                                <ons-toolbar-button>
+                                <img src="https://image.flaticon.com/icons/svg/135/135643.svg" style="width: 30%"></ons-toolbar-button>
+                                <br></br>
+                                <p2>Kebabs</p2>
+                        </ons-card></ons-col>
+                  </ons-row>
+                  
+
+                  <ons-row>
+                        <ons-col width="50%"><ons-card id="melbourne">
+                                <ons-toolbar-button>
+                                <img src="https://image.flaticon.com/icons/svg/135/135658.svg" style="width: 30%"></ons-toolbar-button>
+                                <br></br>
+                                <p2>Chinese</p2>
+                        </ons-card></ons-col>
+                        <ons-col width="50%"><ons-card id="melbourne">
+                                <ons-toolbar-button>
+                                <img src="https://image.flaticon.com/icons/svg/1161/1161623.svg" style="width: 30%"></ons-toolbar-button>
+                                <br></br>
+                                <p2>Pizza</p2>
+                        </ons-card></ons-col>
+                  </ons-row>
+
+                  <ons-row>
+                        <ons-col width="50%"><ons-card id="melbourne">
+                                <ons-toolbar-button>
+                                <img src="https://image.flaticon.com/icons/svg/898/898122.svg" style="width: 30%"></ons-toolbar-button>
+                                <br></br>
+                                <p2>Thai</p2>
+                        </ons-card></ons-col>
+                        <ons-col width="50%"><ons-card id="melbourne">
+                                <ons-toolbar-button>
+                                <img src="https://image.flaticon.com/icons/svg/135/135637.svg" style="width: 30%"></ons-toolbar-button>
+                                <br></br>
+                                <p2>Vegeterian</p2>
+                        </ons-card></ons-col>
+                  </ons-row>
+        
+                  <br>
+                  <center><ons-button id="button-black" modifier="quiet">more...</ons-button></center>
+
+                  <template id="alert-dialog.html">
+                        <ons-alert-dialog id="my-alert-dialog" modifier="rowfooter">
+                          <div class="alert-dialog-title">Confirm</div><br>
+                          <div class="alert-dialog-footer">
+                            <ons-alert-dialog-button onclick="hideAlertDialog()">Cancel</ons-alert-dialog-button>
+                            <ons-alert-dialog-button onclick="hideAlertDialog1()">OK</ons-alert-dialog-button>
+                          </div>
+                        </ons-alert-dialog>
+                      </template>
+    </ons-page>
+
+
+</body>
+           <script>
+                function validate5() {
+                    window.location.href = "resturant-list.html";
+                }
+
+                function hideAlertDialog() {
+                window.location.href = "food-category.html";
+                }
+
+                function hideAlertDialog1() {
+                window.location.href = "index.html";
+                }
+            </script>
+
+</html>
