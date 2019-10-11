@@ -63,31 +63,11 @@
             </ons-toolbar>
 
             <br>
-
-            <div style="padding-top: 12px; text-align: center; ">
-                <label class="radio-button radio-button--material" style="width: 30%">
-                    <input type="radio" class="radio-button__input radio-button--material__input" name="r"
-                        checked="checked">
-                    <div class="radio-button__checkmark radio-button--material__checkmark"></div>
-                    Delivery
-                </label>
-
-                <label class="radio-button radio-button--material" style="width: 30%">
-                    <input type="radio" class="radio-button__input radio-button--material__input" name="r">
-                    <div class="radio-button__checkmark radio-button--material__checkmark"></div>
-                    Pickup
-                </label>
-            </div>
-            <br>
-            
-                  <ons-card id="melbourne">
-                     <p2>Melbourne</p2>
-                  </ons-card>
         
                   
                   <ons-row>
                         <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button onclick="validate5()">
+                                <ons-toolbar-button onclick="btnfastfood()">
                                 <img src="https://image.flaticon.com/icons/png/128/883/883765.png" style="width: 30%"></ons-toolbar-button>
                                 <br></br>
                                 <p2>Fast Food</p2>
@@ -131,8 +111,7 @@
                         </ons-card></ons-col>
                   </ons-row>
         
-                  <br>
-                  <center><ons-button id="button-black" modifier="quiet">more...</ons-button></center>
+                  
 
                   <template id="alert-dialog.html">
                         <ons-alert-dialog id="my-alert-dialog" modifier="rowfooter">
@@ -148,7 +127,7 @@
 
 </body>
            <script>
-                function validate5() {
+                function btnfastfood() {
                     window.location.href = "resturant-list.html";
                 }
 

@@ -103,7 +103,7 @@
             <center><p2><b>Pay via</b></p2></center>
             <br>
 
-            <ons-button modifier="large" id="color-violet" onclick="createAlertDialog()">
+            <ons-button modifier="large" id="color-violet" onclick="creditcard()">
                 <p2>Credit Card</p2>
             </ons-button>
             <br>
@@ -116,18 +116,6 @@
             <ons-button modifier="large" id="color-black">
                 <p2>Cash on Delivery</p2>
             </ons-button>
-
-            <template id="alert-dialog.html">
-                    <ons-alert-dialog id="my-alert-dialog" modifier="rowfooter">
-                      <div class="alert-dialog-title">Confirm</div><br>
-                      <div class="alert-dialog-footer">
-                        <ons-alert-dialog-button onclick="hideAlertDialog()">Cancel</ons-alert-dialog-button>
-                        <ons-alert-dialog-button onclick="hideAlertDialog1()">OK</ons-alert-dialog-button>
-                      </div>
-                    </ons-alert-dialog>
-                  </template>
-
-
       </ons-card>
     </ons-page>
 
@@ -138,11 +126,7 @@
             window.location.href = "resturant-menu.html";
         }
 
-        function hideAlertDialog() {
-            window.location.href = "order-confirmation.html";
-        }
-
-        function hideAlertDialog1() {
+        function creditcard() {
             window.location.href = "food-category.html";
         }
     </script>
