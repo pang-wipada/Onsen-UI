@@ -175,16 +175,19 @@ ons-button[modifier="material2"] {
     text-align: center;
 }
 
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.42);
+}
 
+.recomended_item {
+    padding-left: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.recomended_item_title {
+    font-size: 12px;
+    font-weight: bold;
+}
 
