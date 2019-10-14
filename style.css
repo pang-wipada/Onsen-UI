@@ -186,8 +186,35 @@ ons-button[modifier="material2"] {
     padding-left: 10px;
 }
 
-.recomended_item_title {
-    font-size: 12px;
-    font-weight: bold;
+.category_content {
+    text-align: center;
 }
+
+.category {
+    margin: 20px 0px;
+    padding: 0px 30px;
+}
+
+.category_wrapper {
+    max-width: 150px;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    background-color:white;
+    background-size: 120%;
+}
+
+.category_thumbnail {
+    display: inline-block;
+    margin: 16px 0px;
+}
+
+.category_title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+}
+
 

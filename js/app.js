@@ -29,9 +29,20 @@ db.collection("recommended").get().then((querySnapshot) => {
     var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
         <div class="thumbnail" style="background-image: url('${doc.data().photoUrl}')">
         </div>
-        <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
     </ons-carousel-item>`
     $("#carousel").append(item);
+   });
+    });
+  }
+
+  $("#category").empty();
+  db.collection("category").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {       
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+        <div class="thumbnail" style="background-image: url('${doc.data().photoUrl}')">
+        </div>
+    </ons-carousel-item>`
+    $("#category").append(item);
    });
     });
   }

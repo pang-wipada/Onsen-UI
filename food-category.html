@@ -23,6 +23,12 @@
                                   <ons-page>
                                     <ons-list>
                                       <ons-list-item tappable>
+                                        <img src="https://image.flaticon.com/icons/svg/263/263115.svg" style="width: 15%"> &nbsp&nbsp                
+                                        Home
+                                        </ons-list-item>
+                                    </ons-list>
+                                    <ons-list>
+                                      <ons-list-item tappable>
                                         <img src="https://image.flaticon.com/icons/svg/149/149452.svg" style="width: 15%"> &nbsp&nbsp                
                                         Profile
                                         </ons-list-item>
@@ -65,6 +71,7 @@
 
             <br>
 
+            <div class="content">
             <div class="recommended">
               <h4>Recommended</h4>
               <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
@@ -72,76 +79,78 @@
                   <ons-carousel-item modifier="nodivider" id="item1" class="recomended_item">
                       <div class="thumbnail" style="background-image: url('images/thumb1.png')">
                       </div>
-                      <div class="recomended_item_title" id="item1_name">Item 1</div>
                   </ons-carousel-item>
                   <ons-carousel-item modifier="nodivider" id="item2" class="recomended_item">
                     <div class="thumbnail" style="background-image: url('images/thumb2.png')">
                     </div>
-                    <div class="recomended_item_title" id="item2_name">Item 2</div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item3" class="recomended_item">
                     <div class="thumbnail" style="background-image: url('images/thumb3.png')">
                     </div>
-                    <div class="recomended_item_title" id="item3_name">Item 3</div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item4" class="recomended_item">
                     <div class="thumbnail" style="background-image: url('images/thumb4.png')">
                     </div>
-                    <div class="recomended_item_title" id="item4_name">Item 4</div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item5" class="recomended_item">
                     <div class="thumbnail" style="background-image: url('images/thumb5.png')">
                     </div>
-                    <div class="recomended_item_title" id="item5_name">Item 5</div>
                 </ons-carousel-item>                
               </ons-carousel>
           </div>
-                  
-                  <ons-row>
-                        <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button onclick="fastfoodbtn()">
-                                <img src="https://image.flaticon.com/icons/png/128/883/883765.png" style="width: 30%"></ons-toolbar-button>
-                                <br></br>
-                                <p2>Fast Food</p2>
-                            </ons-card></ons-col>
-                        <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button>
-                                <img src="https://image.flaticon.com/icons/svg/135/135643.svg" style="width: 30%"></ons-toolbar-button>
-                                <br></br>
-                                <p2>Kebabs</p2>
-                        </ons-card></ons-col>
-                  </ons-row>
-                  
-
-                  <ons-row>
-                        <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button>
-                                <img src="https://image.flaticon.com/icons/svg/135/135658.svg" style="width: 30%"></ons-toolbar-button>
-                                <br></br>
-                                <p2>Chinese</p2>
-                        </ons-card></ons-col>
-                        <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button>
-                                <img src="https://image.flaticon.com/icons/svg/1161/1161623.svg" style="width: 30%"></ons-toolbar-button>
-                                <br></br>
-                                <p2>Pizza</p2>
-                        </ons-card></ons-col>
-                  </ons-row>
-
-                  <ons-row>
-                        <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button>
-                                <img src="https://image.flaticon.com/icons/svg/898/898122.svg" style="width: 30%"></ons-toolbar-button>
-                                <br></br>
-                                <p2>Thai</p2>
-                        </ons-card></ons-col>
-                        <ons-col width="50%"><ons-card id="melbourne">
-                                <ons-toolbar-button>
-                                <img src="https://image.flaticon.com/icons/svg/135/135637.svg" style="width: 30%"></ons-toolbar-button>
-                                <br></br>
-                                <p2>Vegeterian</p2>
-                        </ons-card></ons-col>
-                  </ons-row>      
+          
+          <br>
+          <div class="category_content">
+              <h4 style="margin-top: 0px">Food Category</h4>
+              <ons-row class="category">
+                  <ons-col modifier="nodivider">
+                      <div class="category_wrapper" style="background-image: url('images/category1.jpg')">
+                          <figure class="category_thumbnail">
+                              <div class="category_title" id="Category_1_name">Fast Food</div>
+                          </figure>
+                      </div>
+                  </ons-col>
+                  <ons-col modifier="nodivider">
+                      <div class="category_wrapper" style="background-image: url('images/category2.jpg')">
+                          <figure class="category_thumbnail">
+                              <div class="category_title" id="Category_1_name">Kababs</div>
+                          </figure>
+                      </div>
+                  </ons-col>
+              </ons-row>
+              <ons-row class="category">
+                  <ons-col modifier="nodivider">
+                      <div class="category_wrapper" style="background-image: url('images/category3.jpg')">
+                          <figure class="category_thumbnail">
+                              <div class="category_title" id="Category_1_name">Chiness</div>
+                          </figure>
+                      </div>
+                  </ons-col>
+                  <ons-col modifier="nodivider">
+                      <div class="category_wrapper" style="background-image: url('images/category4.jpg')">
+                          <figure class="category_thumbnail">
+                              <div class="category_title" id="Category_1_name">Pizza</div>
+                          </figure>
+                      </div>
+                  </ons-col>
+              </ons-row>
+              <ons-row class="category">
+                  <ons-col modifier="nodivider">
+                      <div class="category_wrapper" style="background-image: url('images/category5.jpg')">
+                          <figure class="category_thumbnail">
+                              <div class="category_title" id="Category_1_name">Thai</div>
+                          </figure>
+                      </div>
+                  </ons-col>
+                  <ons-col modifier="nodivider">
+                      <div class="category_wrapper" style="background-image: url('images/category6.jpg')">
+                          <figure class="category_thumbnail">
+                              <div class="category_title" id="Category_1_name">Vegeterian</div>
+                          </figure>
+                      </div>
+                  </ons-col>
+              </ons-row>
+          </div>
     </ons-page>
 
 
