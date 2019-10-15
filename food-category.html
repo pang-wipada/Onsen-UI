@@ -22,7 +22,7 @@
                                 <ons-splitter-side id="sidemenu" side="left" width="220px" collapse swipeable>
                                   <ons-page>
                                     <ons-list>
-                                      <ons-list-item tappable>
+                                      <ons-list-item onclick="home()" tappable>
                                         <img src="https://image.flaticon.com/icons/svg/263/263115.svg" style="width: 15%"> &nbsp&nbsp                
                                         Home
                                         </ons-list-item>
@@ -73,27 +73,27 @@
 
             <div class="content">
             <div class="recommended">
-              <h4>Recommended</h4>
+              <h4><b>Recommended</b></h4>
               <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
                   class="recomended_list" id="carousel">
-                  <ons-carousel-item modifier="nodivider" id="item1" class="recomended_item">
-                      <div class="thumbnail" style="background-image: url('images/thumb1.png')">
+                  <ons-carousel-item modifier="nodivider" id="item1" class="recomended_item" onclick="item1()">
+                      <div class="thumbnail" style="background-image: url('images/item1.jpg')">
                       </div>
                   </ons-carousel-item>
-                  <ons-carousel-item modifier="nodivider" id="item2" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/thumb2.png')">
+                  <ons-carousel-item modifier="nodivider" id="item2" class="recomended_item" onclick="item2()">
+                    <div class="thumbnail" style="background-image: url('images/item2.jpg')">
                     </div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item3" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/thumb3.png')">
+                    <div class="thumbnail" style="background-image: url('images/item3.jpg')">
                     </div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item4" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/thumb4.png')">
+                    <div class="thumbnail" style="background-image: url('images/item4.jpg')">
                     </div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item5" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/thumb5.png')">
+                    <div class="thumbnail" style="background-image: url('images/item5.jpg')">
                     </div>
                 </ons-carousel-item>                
               </ons-carousel>
@@ -101,11 +101,11 @@
           
           <br>
           <div class="category_content">
-              <h4 style="margin-top: 0px">Food Category</h4>
+              <h4 style="margin-top: 0px"><b>Food Category</b></h4>
               <ons-row class="category">
                   <ons-col modifier="nodivider">
                       <div class="category_wrapper" style="background-image: url('images/category1.jpg')">
-                          <figure class="category_thumbnail">
+                          <figure class="category_thumbnail" onclick="fastfood()">
                               <div class="category_title" id="Category_1_name">Fast Food</div>
                           </figure>
                       </div>
@@ -156,12 +156,24 @@
 
 </body>
            <script>
-                function fastfoodbtn() {
+               function item1() {
+                    window.location.href = "resturant-list.html";
+                }
+
+                function item2() {
+                    window.location.href = "resturant-list.html";
+                }
+
+                function fastfood() {
                     window.location.href = "resturant-list.html";
                 }
 
                 function logout() {
                     window.location.href = "index.html";
+                }
+
+                function home() {
+                    window.location.href = "food-category.html";
                 }
             </script>
 

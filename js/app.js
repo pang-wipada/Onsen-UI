@@ -38,12 +38,12 @@ db.collection("recommended").get().then((querySnapshot) => {
   $("#category").empty();
   db.collection("category").get().then((querySnapshot) => {
   querySnapshot.forEach((doc) => {       
-    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
-        <div class="thumbnail" style="background-image: url('${doc.data().photoUrl}')">
+    var item = `<<ons-col modifier="nodivider" id="item${doc.data().id}">
+        <div class="category_wrapper" style="background-image: url('${doc.data().photoUrl}')">
         </div>
-    </ons-carousel-item>`
+    </<ons-col>`
     $("#category").append(item);
    });
     });
-  }
+    
 });
