@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Category</title>
 
-    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
-    <script src="js/app.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -17,9 +14,9 @@
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
 </head>
 
-<body id="homePage">
+<body>
                 <ons-splitter id="mySplitter">
-                                <ons-splitter-side id="sidemenu" side="left" width="220px" collapse swipeable>
+                                <ons-splitter-side side="left" width="220px" collapse swipeable>
                                   <ons-page>
                                     <ons-list>
                                       <ons-list-item onclick="home()" tappable>
@@ -57,7 +54,7 @@
     <ons-page id="color-page">
             <ons-toolbar>
                    <div class="left">
-                        <ons-toolbar-button id="menubtn"> 
+                        <ons-toolbar-button> 
                            <img src="https://image.flaticon.com/icons/svg/60/60510.svg" style="width: 15%">
                         </ons-toolbar-button>
                    </div>
@@ -77,23 +74,23 @@
               <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
                   class="recomended_list" id="carousel">
                   <ons-carousel-item modifier="nodivider" id="item1" class="recomended_item" onclick="item1()">
-                      <div class="thumbnail" style="background-image: url('images/item1.jpg')">
+                      <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/item1.JPG?alt=media&token=35f56cad-977d-4dab-83f8-6df94f9bfa94')">
                       </div>
                   </ons-carousel-item>
                   <ons-carousel-item modifier="nodivider" id="item2" class="recomended_item" onclick="item2()">
-                    <div class="thumbnail" style="background-image: url('images/item2.jpg')">
+                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/item2.JPG?alt=media&token=270e37d6-451c-428b-b9e7-3bdb09998e4c')">
                     </div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item3" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/item3.jpg')">
+                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/item3.JPG?alt=media&token=b52c8e61-12a2-4a07-b428-5ff013d4cb53')">
                     </div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item4" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/item4.jpg')">
+                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/item4.JPG?alt=media&token=1da5ae93-dcc3-4777-92a0-9753f89c51f9')">
                     </div>
                 </ons-carousel-item>
                 <ons-carousel-item modifier="nodivider" id="item5" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('images/item5.jpg')">
+                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/item5.JPG?alt=media&token=0d0e840d-18e5-4ed3-b902-5e90147c9b17')">
                     </div>
                 </ons-carousel-item>                
               </ons-carousel>
@@ -104,14 +101,14 @@
               <h4 style="margin-top: 0px"><b>Food Category</b></h4>
               <ons-row class="category">
                   <ons-col modifier="nodivider">
-                      <div class="category_wrapper" style="background-image: url('images/category1.jpg')">
+                      <div class="category_wrapper" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/category1.jpg?alt=media&token=2544ff5a-e87a-48bf-a02e-2013e291f6f1')">
                           <figure class="category_thumbnail" onclick="fastfood()">
                               <div class="category_title" id="Category_1_name">Fast Food</div>
                           </figure>
                       </div>
                   </ons-col>
                   <ons-col modifier="nodivider">
-                      <div class="category_wrapper" style="background-image: url('images/category2.jpg')">
+                      <div class="category_wrapper" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/category2.jpg?alt=media&token=7d5da7e8-8ff0-4753-8f2c-56e109903fb9')">
                           <figure class="category_thumbnail">
                               <div class="category_title" id="Category_1_name">Kababs</div>
                           </figure>
@@ -120,14 +117,14 @@
               </ons-row>
               <ons-row class="category">
                   <ons-col modifier="nodivider">
-                      <div class="category_wrapper" style="background-image: url('images/category3.jpg')">
+                      <div class="category_wrapper" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/category3.jpg?alt=media&token=1c2dfc24-3579-4b68-9f1f-3100ed181ddf')">
                           <figure class="category_thumbnail">
                               <div class="category_title" id="Category_1_name">Chiness</div>
                           </figure>
                       </div>
                   </ons-col>
                   <ons-col modifier="nodivider">
-                      <div class="category_wrapper" style="background-image: url('images/category4.jpg')">
+                      <div class="category_wrapper" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/category4.jpg?alt=media&token=ae1fdd29-add8-4f6e-b880-7791471d828f')">
                           <figure class="category_thumbnail">
                               <div class="category_title" id="Category_1_name">Pizza</div>
                           </figure>
@@ -136,14 +133,14 @@
               </ons-row>
               <ons-row class="category">
                   <ons-col modifier="nodivider">
-                      <div class="category_wrapper" style="background-image: url('images/category5.jpg')">
+                      <div class="category_wrapper" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/category5.jpg?alt=media&token=f981f4e5-a600-4a1b-b699-98bcf9e22c2c')">
                           <figure class="category_thumbnail">
                               <div class="category_title" id="Category_1_name">Thai</div>
                           </figure>
                       </div>
                   </ons-col>
                   <ons-col modifier="nodivider">
-                      <div class="category_wrapper" style="background-image: url('images/category6.jpg')">
+                      <div class="category_wrapper" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/category6.jpg?alt=media&token=7d96e449-27bf-46e8-8518-1454b6e08578')">
                           <figure class="category_thumbnail">
                               <div class="category_title" id="Category_1_name">Vegeterian</div>
                           </figure>
@@ -153,7 +150,8 @@
           </div>
     </ons-page>
 
-
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
 </body>
            <script>
                function item1() {
