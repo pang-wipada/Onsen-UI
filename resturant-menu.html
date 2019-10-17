@@ -32,7 +32,7 @@
         <ons-card id="resturant menu">
                 <ons-row id="row1">
                         <ons-col width="50%">
-                                <div class="logo" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/logo1.JPG?alt=media&token=a6fff4ec-589c-4213-b841-53ba0d571773')"></div>                                        
+                                <div class="logo" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/food-delivery-ac2fb.appspot.com/o/logo1.JPG?alt=media&token=b9e0e83b-d95c-4235-b6fc-be696d539745')"></div>                                        
                             </ons-col>
                         <ons-col width="50%">
                                 <p2>McDonald's</p2>
@@ -49,18 +49,20 @@
                             </ons-col>
                 </ons-row>
 <br>
-                <p2>Starters</p2> <br>
+
                 <ons-row>
                         <ons-col width="75%">
                                 <p4>McFried Chicken</p4>
                                 <br>
                                 <p6>Served with coke</p6>
                             </ons-col>
-                        <ons-col width="10%">
+                        <ons-col width="15%">
                                 <p2>89฿</p2>
                             </ons-col>
-                        <ons-col width="15%">
-                                <ons-button id="add" onclick="price1()">+</ons-button>
+                        <ons-col width="10%">
+                              <label>
+                                <ons-checkbox input-id="check-1"></ons-checkbox>
+                              </label>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -70,11 +72,13 @@
                                 <br>
                                 <p6>Served with coke</p6>
                             </ons-col>
-                        <ons-col width="10%">
+                        <ons-col width="15%">
                                 <p2>59฿</p2>
                             </ons-col>
-                        <ons-col width="15%">
-                                <ons-button id="add" onclick="price2()">+</ons-button>
+                        <ons-col width="10%">
+                            <label>
+                                <ons-checkbox input-id="check-2"></ons-checkbox>
+                              </label>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -84,15 +88,15 @@
                                 <br>
                                 <p6>Served with coke</p6>
                             </ons-col>
-                        <ons-col width="10%">
+                        <ons-col width="15%">
                                 <p2>89฿</p2>
                             </ons-col>
-                        <ons-col width="15%">
-                                <ons-button id="add" onclick="price3()">+</ons-button>
+                        <ons-col width="10%">
+                            <label>
+                                <ons-checkbox input-id="check-3"></ons-checkbox>
+                              </label>
                             </ons-col>
                 </ons-row>
-                <br>
-                <p2>Mains</p2> 
                 <br>
                 <ons-row>
                         <ons-col width="75%">
@@ -100,11 +104,13 @@
                                 <br>
                                 <p6>Served with coke</p6>
                             </ons-col>
-                        <ons-col width="10%">
+                        <ons-col width="15%">
                                 <p2>69฿</p2>
                             </ons-col>
-                        <ons-col width="15%">
-                                <ons-button id="add" onclick="price4()">+</ons-button>
+                        <ons-col width="10%">
+                            <label>
+                                <ons-checkbox input-id="check-4"></ons-checkbox>
+                              </label>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -114,11 +120,13 @@
                                 <br>
                                 <p6>Served with coke</p6>
                             </ons-col>
-                        <ons-col width="10%">
+                        <ons-col width="15%">
                                 <p2>89฿</p2>
                             </ons-col>
-                        <ons-col width="15%">
-                                <ons-button id="add" onclick="price5()">+</ons-button>
+                        <ons-col width="10%">
+                            <label>
+                                <ons-checkbox input-id="check-5"></ons-checkbox>
+                              </label>
                             </ons-col>
                 </ons-row>
        
@@ -128,17 +136,16 @@
             <br>
         <ons-card>
                 <ons-row>
-                <ons-col width="80%">
+                <ons-col width="70%">
                         &nbsp&nbsp;
                     Your Order : 
                 </ons-col>
-                <ons-col width="20%">
-                    <button id="button-order" onclick="order()"><b>Order</b></button>
+                <ons-col width="30%">
+                    <button class="button button--material" id="button-order" onclick="order()"><b>Order</b></button>
                 </ons-col>
                 </ons-row>
             </ons-card>
-                
-            
+                        
     </ons-page>
 
 </body>

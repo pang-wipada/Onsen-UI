@@ -13,7 +13,7 @@ h2 {
 p {
     text-align: center;
     font: 1em sans-serif;
-    font-size: 8pt;
+    font-size: 10pt;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -38,7 +38,7 @@ p3 {
 p4 {
     font: 1em sans-serif;
     font-family: 'PT Sans', sans-serif;
-    font-size: 8pt;
+    font-size: 10pt;
 }
 
 p5 {
@@ -80,15 +80,15 @@ ons-button[modifier="material2"] {
 }
 
 #login {
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 #register {
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 #color-page .page__background{
-    background-color:#FFFF66;
+    background-color: #FF9100;
 
 }
 
@@ -96,13 +96,9 @@ ons-button[modifier="material2"] {
     text-align: center;
 }
 
-#add {
-    background-color: gray;
-}
-
 #button-order {
-    background-color: white;
-    color: black;
+    background-color: rgb(46, 46, 46);
+    color: white;
     font-size: 10pt;
     font-family: 'PT Sans', sans-serif;
 }
@@ -208,5 +204,7 @@ ons-button[modifier="material2"] {
     background-color: rgba(0, 0, 0, 0.42);
     background-size: 100%;
 }
+
+
 
 

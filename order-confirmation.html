@@ -32,7 +32,7 @@
 
       <ons-card id="order confirmation">
             <center>
-                <div class="logo" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/eatwithus-958ea.appspot.com/o/logo1.JPG?alt=media&token=a6fff4ec-589c-4213-b841-53ba0d571773')"></div>                                        
+                <div class="logo" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/food-delivery-ac2fb.appspot.com/o/logo1.JPG?alt=media&token=b9e0e83b-d95c-4235-b6fc-be696d539745')"></div>                                        
                 <br>
                 <p2>McDonald's</p2>
                 <br>
@@ -108,7 +108,7 @@
             </ons-button>
             <br>
 
-            <ons-button modifier="large" id="color-blue">
+            <ons-button modifier="large" id="color-blue" onclick="paypal()">
                 <p2>PayPal</p2>
             </ons-button>
             <br>
@@ -127,6 +127,10 @@
         }
 
         function creditcard() {
+            window.location.href = "food-category.html";
+        }
+
+        function paypal() {
             window.location.href = "food-category.html";
         }
     </script>
