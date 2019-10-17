@@ -100,21 +100,6 @@ ons-button[modifier="material2"] {
     background-color: gray;
 }
 
-#drinks {
-    background-color: rgb(223, 223, 223);
-    color: black;
-}
-
-#desserts {
-    background-color: rgb(223, 223, 223);
-    color: black;
-}
-
-#order {
-    background-color: rgba(0, 0, 0, 0.801);
-    height: 40pt;
-}
-
 #button-order {
     background-color: white;
     color: black;

@@ -60,7 +60,7 @@
                                 <p2>89฿</p2>
                             </ons-col>
                         <ons-col width="15%">
-                                <ons-button id="add">+</ons-button>
+                                <ons-button id="add" onclick="price1()">+</ons-button>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -74,7 +74,7 @@
                                 <p2>59฿</p2>
                             </ons-col>
                         <ons-col width="15%">
-                                <ons-button id="add">+</ons-button>
+                                <ons-button id="add" onclick="price2()">+</ons-button>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -88,7 +88,7 @@
                                 <p2>89฿</p2>
                             </ons-col>
                         <ons-col width="15%">
-                                <ons-button id="add">+</ons-button>
+                                <ons-button id="add" onclick="price3()">+</ons-button>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -104,7 +104,7 @@
                                 <p2>69฿</p2>
                             </ons-col>
                         <ons-col width="15%">
-                                <ons-button id="add">+</ons-button>
+                                <ons-button id="add" onclick="price4()">+</ons-button>
                             </ons-col>
                 </ons-row>
                 <br>
@@ -118,53 +118,33 @@
                                 <p2>89฿</p2>
                             </ons-col>
                         <ons-col width="15%">
-                                <ons-button id="add">+</ons-button>
+                                <ons-button id="add" onclick="price5()">+</ons-button>
                             </ons-col>
                 </ons-row>
-
-            <br>
-            <ons-button id="drinks" style="width: 100%">
-                <ons-row>
-                        <ons-col width="90%">
-                            <p2>Drinks</p2>
-                        </ons-col>
-                        <ons-col width="10%">
-                            <img src="https://image.flaticon.com/icons/svg/109/109526.svg" style="width: 40%">
-                        </ons-col>
-                    </ons-row>
-                </ons-button>
-
-                <br></br>
-            <ons-button id="desserts" style="width: 100%">
-                    <ons-row>
-                    <ons-col width="90%">
-                        <p2>Desserts</p2>
-                    </ons-col>
-                    <ons-col width="10%">
-                           <img src="https://image.flaticon.com/icons/svg/109/109526.svg" style="width: 40%">
-                       </ons-col>
-                    </ons-row>
-                </ons-button>
+       
          </ons-card>
 
-        <div id="order">
+        
             <br>
+        <ons-card>
                 <ons-row>
                 <ons-col width="80%">
-                    <p7>&nbsp&nbsp    Your Order : 34฿</p7>  
+                        &nbsp&nbsp;
+                    Your Order : 
                 </ons-col>
                 <ons-col width="20%">
-                    <button id="button-order" onclick="validate7()"><b>Order</b></button>
+                    <button id="button-order" onclick="order()"><b>Order</b></button>
                 </ons-col>
                 </ons-row>
+            </ons-card>
                 
-            </div>
+            
     </ons-page>
 
 </body>
 
     <script>
-        function validate7() {
+        function order() {
             window.location.href = "order-confirmation.html";
         }
 
