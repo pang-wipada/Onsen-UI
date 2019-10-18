@@ -1,7 +1,4 @@
 {
-  "database": {
-    "rules": "n"
-  },
   "hosting": {
     "public": "y",
     "ignore": [

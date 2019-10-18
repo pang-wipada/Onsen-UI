@@ -79,7 +79,7 @@ ons-button[modifier="material2"] {
     background: rgb(189, 11, 11);
 }
 
-#login {
+#login-card {
     margin-top: 15%;
 }
 
@@ -87,10 +87,31 @@ ons-button[modifier="material2"] {
     margin-top: 15%;
 }
 
-#color-page .page__background{
+#loginPage .page__background{
     background-color: #FF9100;
-
 }
+
+#page-foodcategory .page__background{
+    background-color: #FF9100;
+}
+
+#page-confirm .page__background{
+    background-color: #FF9100;
+}
+
+#page-menu .page__background{
+    background-color: #FF9100;
+}
+
+#page-list .page__background{
+    background-color: #FF9100;
+}
+
+#page-regis .page__background{
+    background-color: #FF9100;
+}
+
+
 
 #melbourne {
     text-align: center;
@@ -162,7 +183,7 @@ ons-button[modifier="material2"] {
     background-size: 100%;
 }
 
-.recomended_item {
+.recommended_item {
     padding-left: 10px;
 }
 

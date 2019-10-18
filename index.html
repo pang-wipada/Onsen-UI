@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
 
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
@@ -17,8 +15,8 @@
 
 <body>
 
-  <ons-page id="color-page">
-        <ons-card id="login">
+  <ons-page id="loginPage">
+        <ons-card id="login-card">
             <center><img src="https://image.flaticon.com/icons/svg/1585/1585291.svg" style="width: 20%"></center>
             <h1>Login</h1>
             <p>Insert your email and password to login</p>
@@ -35,7 +33,7 @@
         <center>
         <section style="width: 70%">
         <br></br>
-            <ons-button modifier="large" onclick="login()">Login</ons-button>
+            <ons-button modifier="large" id="login">Login</ons-button>
         </section>
         
         <br>
@@ -43,42 +41,31 @@
 
         <br></br>
             <ons-button modifier="material1" class="button--cta" style="width: 35%;" onclick="factbook()">Facebook</ons-button>
-            <ons-button modifier="material2" class="button--cta" style="width: 35%;" onclick="gmail()">Gmail</ons-button>
+            <ons-button modifier="material2" class="button--cta" style="width: 35%;" id="gmail">Gmail</ons-button>
         </center>
 
         <br>
         <div><center>
            <ons-button id="forgot" modifier="quiet">forgot password?</ons-button>
-           <ons-button id="regis" modifier="quiet" onclick="register()">create an account</ons-button></center>
+           <ons-button id="regis" modifier="quiet" onclick="register()">create an account</ons-button>
         </div>
       </ons-card>
 
 </ons-page>   
+
     <script src="js/app.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+
 
 </body>
 
     <script>
-        function login() {
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-
-            if (email === 'user@gmail.com' && password === '12345678') {
-                window.location.href = "food-category.html";
-            } else {
-                window.location.href = "index.html";
-            }
-            };
 
         function factbook() {
-            window.location.href = "food-category.html";
-        }
-
-        function gmail() {
             window.location.href = "food-category.html";
         }
 
